@@ -27,7 +27,7 @@ class Stack
     # Push a value onto the stack
     def push(value)
         # IMPLEMENT ME!
-        @data = LinkedListNode.new(value, @data)
+        @data = LinkedListNode.new(value, @data) #adding nodes into our empty stack
     end
 
     # Pop an item off the stack.
@@ -35,8 +35,8 @@ class Stack
     # stack and return the value to the user
     def pop
         # I RETURN A VALUE
-        return print "nil\n" if @data.nil?
-        print "#{@data.value}\n"
+        return print "nil\n" if @data.nil? #prints nil if our next node is empty
+        print "#{@data.value}\n" #@data.value is the value removed from the top of the stack
         @data = @data.next_node  
     end
 
